@@ -1,0 +1,67 @@
+﻿
+<div class="container ">
+        <div class="contact pull-right">
+            <a href="~/Home/About" class="contact-email">关于资料书</a>
+        </div>
+        <div class="contact pull-right">
+            <a data-toggle="modal" id="btnFeedBack" class="contact-email" href="" data-target="#devFeedBack">建议和反馈</a>
+            <span class="divider">/</span>
+        </div>
+        <div class="contact pull-right">
+            <a href="~/Home/copyright" class="contact-email">内容声明</a>
+            <span class="divider">/</span>
+        </div>
+</div>
+<div id="devFeedBack" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <form id="fmSendMessege">
+        <div class="modal-dialog" style="width: 380px; height: 210px;  ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal">×</a>
+                    <h3>建议和反馈</h3>
+                </div>
+                <div class="modal-body table">
+
+                    <textarea id="Content" class="input-text full-width  table-bordered" placeholder="请填写你的反馈内容" name="content"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <a href="javascript:void(0);" class="btn btn-success" onclick="btnSendMessege()">发送</a>
+                    <a href="#" class="btn" data-dismiss="modal">取消</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $ = jQuery;
+    jQuery(document).ready((function () {
+        // dom加载完毕
+        $('#devFeedBack').on('show.bs.modal', centerModals);
+        $(window).on('resize', centerModals);
+    }));
+    $("#devFeedBack").draggable({
+        handle: ".modal-header",
+        cursor: 'move',
+        refreshPositions: false
+    });
+    function centerModals() {
+        $('#devFeedBack').each(function (i) {
+            var $clone = $(this).clone().css('display', 'block').appendTo('body'); var top = Math.round(($clone.height() - $clone.find('.modal-content').height()) / 2);
+            top = top > 0 ? top : 0;
+            $clone.remove();
+            $(this).find('.modal-content').css("margin-top", top);
+        });
+    }
+    btnSendMessege = function () {
+        
+        $.post("Systems/SendMessege", { "Content": $("#Content").val() }, function (data) {
+            if (data)
+                {
+                jQuery('#devFeedBack').modal("hide");
+                alert("发送成功！");
+            }
+        });
+    }
+
+</script>

@@ -1,0 +1,16 @@
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Release\ziliaoshu.Common.dll
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Release\ziliaoshu.Common.pdb
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Release\EntityFramework.dll
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Release\EntityFramework.xml
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Release\zh-Hans\EntityFramework.resources.dll
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\obj\Release\ziliaoshu.Common.csprojResolveAssemblyReference.cache
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\obj\Release\ziliaoshu.Common.dll
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\obj\Release\ziliaoshu.Common.pdb
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Release\ziliaoshu.Common.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Release\ziliaoshu.Common.pdb
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Release\EntityFramework.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Release\EntityFramework.xml
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\obj\Release\ziliaoshu.Common.csprojResolveAssemblyReference.cache
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\obj\Release\ziliaoshu.Common.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\obj\Release\ziliaoshu.Common.pdb

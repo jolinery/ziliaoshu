@@ -1,0 +1,16 @@
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\b\MySql.Data.Fakes.xml
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\b\MySql.Data.Fakes.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\b\MySql.Data.Fakes.pdb
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\b\Arch.Data.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\b\Entity.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\b\Microsoft.QualityTools.Testing.Fakes.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\b\MySql.Data.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\b\ziliaoshu.Common.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\b\ziliaoshu.IDao.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\b\Entity.pdb
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\b\ziliaoshu.Common.pdb
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\b\ziliaoshu.IDao.pdb
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\b\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\o\f.csprojResolveAssemblyReference.cache
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\o\MySql.Data.Fakes.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Dao\obj\Debug\Fakes\msd\o\MySql.Data.Fakes.pdb

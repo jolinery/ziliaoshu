@@ -1,0 +1,89 @@
+﻿@model ZiLiaoShu.Entity.BookDetailDVO
+@{
+    ViewBag.Title = "BookList";
+}
+
+<form id="FormList" method="get" action="@Url.Content("~/MeetingProduct/PackProduct/SearchList")">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left" role="search-box">
+                <input type="text" value="@Model.searchKey" class="form-control" onclick="javascript:window.location.href='Search.html';" placeholder="书名,作者">
+                <button type="button" class="btn btn-info btn-default" contenteditable="false">搜索</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">筛选<b class="glyphicon glyphicon-list"></b></a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </nav>
+</form>
+
+<div>
+    <table class="table table-striped" contenteditable="false">
+        <thead>
+            <tr>
+                
+                <th>书名</th>
+                
+                <th>封面</th>
+                <th>作者</th>
+                <th>出版社</th>
+                <th>大小</th>
+                <th>介绍</th>
+
+                <th>上传者</th>
+                <th>上传时间</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Item in Model.List)
+            { 
+            <tr>
+                <td><a href="~/Home/ViewBook?id=@Item.Adress" target="_blank"> @Item.BookName </a></td>
+                <td><img alt="@Item.icon"></td>
+                <td>@Item.Author</td>
+                <td>@Item.Press</td>
+                <td>@string.Format("{0:F}", Item.FileSize * 1.0 / 1024000) MB</td>
+                <td>@Item.Detail</td>
+                <td>@Item.DataChange_CreateUser</td>
+                <td>@Item.DataChange_CreateTime</td>
+            </tr>
+            }
+            @*<tr class="success">
+                <td>1</td>
+                <td>TB - Monthly</td>
+                <td>01/04/2012</td>
+                <td>Approved</td>
+            </tr>
+            <tr class="error">
+                <td>2</td>
+                <td>TB - Monthly</td>
+                <td>02/04/2012</td>
+                <td>Declined</td>
+            </tr>
+            <tr class="warning">
+                <td>3</td>
+                <td>TB - Monthly</td>
+                <td>03/04/2012</td>
+                <td>Pending</td>
+            </tr>
+            <tr class="info">
+                <td>4</td>
+                <td>TB - Monthly</td>
+                <td>04/04/2012</td>
+                <td>Call in to confirm</td>
+            </tr>*@
+        </tbody>
+                
+    </table>
+</div>

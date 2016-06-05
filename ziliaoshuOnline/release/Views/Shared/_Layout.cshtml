@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<!--[if gt IE 9]><!--><html><!--<![endif]-->
+<head>
+    <!-- Page Title -->
+    <title>资料书 - ziliaoshu.com 来这里找资料</title>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="资料书,技术资料,学习资料,PDF资料,电子书,电子文档,资料分享,技术分享" />
+    <meta name="description" content="资料书 | (ziliaoshu.com)共享视觉资料新平台,">
+    <meta name="author" content="SoapTheme">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Javascript -->
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/jquery.noconflict.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/modernizr.2.7.1.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/jquery-migrate-1.2.1.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/jquery.placeholder.js")"></script>
+    <script src="~/Scripts/jquery-ui-1.8.24.min.js"></script>
+    <!-- Twitter Bootstrap -->
+    <script type="text/javascript" src="@Url.Content("~/js/bootstrap.js")"></script>
+    <script src="@Url.Content("~/script/FeedBack/FeedBack.js")"></script>
+
+
+    <!-- Theme Styles -->
+    <link rel="stylesheet" href="@Url.Content("~/css/bootstrap.min.css")">
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+    <link href='http://fonts.useso.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="@Url.Content("~/css/animate.min.css")">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/components/flexslider/flexslider.css")" media="screen" />
+
+    <!-- Main Style -->
+    <link id="main-style" rel="stylesheet" href="~/css/style.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="@Url.Content("~/css/custom.css")">
+
+    <!-- Updated Styles -->
+    <link rel="stylesheet" href="@Url.Content("~/css/updates.css")">
+
+    <!-- Responsive Styles -->
+    <link rel="stylesheet" href="@Url.Content("~/css/responsive.css")">
+
+    <!-- CSS for IE -->
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" type="text/css" href="~/css/ie.css" />
+    <![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script type='text/javascript' src="js/html5.js"></script>
+      <script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="page-wrapper">
+        <header id="header" class="navbar-static-top">
+
+            <div class="topnav hidden-xs">
+
+                @Html.Partial("_Header")
+            </div>
+            <div class="main-header">
+                @Html.Partial("_Munu")
+            </div>
+            @*<div id="Ailvw-signup" class="Ailvw-signup-box Ailvw-box">
+                @{Html.RenderAction("_SignUp", "Account");}
+            </div>
+            <div id="Ailvw-login" class="Ailvw-login-box Ailvw-box">
+                @{Html.RenderAction("_Login", "Account");}
+            </div>*@
+
+        </header>
+        <section id="content">
+            <div class="container">
+                @RenderBody()
+                </div>
+            </section>
+                <footer id="footer">
+                    <div class="bottom-right">
+                        @Html.Partial("_Footer_Wrapper")
+                    </div>
+                    <div class="bottom gray-area">
+                        @Html.Partial("_Footer_Bottom")
+                    </div>
+                </footer>
+            </div>
+
+
+
+
+
+
+            <!-- parallax -->
+    <script type="text/javascript" src="@Url.Content("~/js/jquery.stellar.min.js")"></script>
+
+            <!-- waypoint -->
+    <script type="text/javascript" src="@Url.Content("~/js/waypoints.min.js")"></script>
+
+            <!-- Flex Slider -->
+    <script type="text/javascript" src="@Url.Content("~/components/flexslider/jquery.flexslider-min.js")"></script>
+
+            <!-- load page Javascript -->
+    <script type="text/javascript" src="@Url.Content("~/js/theme-scripts.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/scripts.js")"></script>
+
+</body>
+</html>
+
+

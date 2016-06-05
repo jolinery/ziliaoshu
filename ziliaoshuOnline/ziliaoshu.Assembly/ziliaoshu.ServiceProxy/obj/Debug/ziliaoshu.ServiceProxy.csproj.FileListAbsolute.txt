@@ -1,0 +1,10 @@
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.ServiceProxy\bin\Debug\ziliaoshu.ServiceProxy.dll
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.ServiceProxy\bin\Debug\ziliaoshu.ServiceProxy.pdb
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.ServiceProxy\obj\Debug\ziliaoshu.ServiceProxy.dll
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.ServiceProxy\obj\Debug\ziliaoshu.ServiceProxy.pdb
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.ServiceProxy\obj\Debug\ziliaoshu.ServiceProxy.csprojResolveAssemblyReference.cache
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.ServiceProxy\bin\Debug\ziliaoshu.ServiceProxy.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.ServiceProxy\bin\Debug\ziliaoshu.ServiceProxy.pdb
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.ServiceProxy\obj\Debug\ziliaoshu.ServiceProxy.csprojResolveAssemblyReference.cache
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.ServiceProxy\obj\Debug\ziliaoshu.ServiceProxy.dll
+E:\Project\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.ServiceProxy\obj\Debug\ziliaoshu.ServiceProxy.pdb

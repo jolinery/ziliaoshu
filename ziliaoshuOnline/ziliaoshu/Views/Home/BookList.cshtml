@@ -50,7 +50,7 @@
             { 
             <tr>
                 <td><a href="~/Home/ViewBook?id=@Item.Adress" target="_blank"> @Item.BookName </a></td>
-                <td><img alt="@Item.icon"></td>
+                <td><img style="width:100px;height:auto" src="@Item.icon"></td>
                 <td>@Item.Author</td>
                 <td>@Item.Press</td>
                 <td>@string.Format("{0:F}", Item.FileSize * 1.0 / 1024000) MB</td>

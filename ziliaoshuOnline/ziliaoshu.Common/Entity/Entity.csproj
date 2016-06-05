@@ -51,6 +51,7 @@
     <Compile Include="Book\BookDetail.cs" />
     <Compile Include="Book\FeedBack.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="DTO\PDFFileEntityDOT.cs" />
     <Compile Include="PageView\BookDetailDVO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

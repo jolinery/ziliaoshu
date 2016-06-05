@@ -57,8 +57,6 @@
     <Compile Include="Class1.cs" />
     <Compile Include="config\ConfigString.cs" />
     <Compile Include="ConstString.cs" />
-    <Compile Include="ConvertPDF2Image\O2SComponents.cs" />
-    <Compile Include="ConvertPDF2Image\PDFFile.cs" />
     <Compile Include="enum\Offline_Enum.cs" />
     <Compile Include="Extension.cs" />
     <Compile Include="PathHelper.cs" />

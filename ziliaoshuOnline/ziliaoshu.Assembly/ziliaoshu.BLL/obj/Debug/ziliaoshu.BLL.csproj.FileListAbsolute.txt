@@ -53,3 +53,4 @@ K:\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.
 K:\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.BLL\obj\Debug\ziliaoshu.BLL.csprojResolveAssemblyReference.cache
 K:\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.BLL\obj\Debug\ziliaoshu.BLL.dll
 K:\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.BLL\obj\Debug\ziliaoshu.BLL.pdb
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Assembly\ziliaoshu.BLL\bin\Debug\O2S.Components.PDFRender4NET.dll

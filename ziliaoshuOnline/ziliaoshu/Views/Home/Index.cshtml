@@ -9,36 +9,45 @@
 
             <div class="carousel slide" id="carousel-152894">
                 <ol class="carousel-indicators">
-                    <li data-slide-to="0" data-target="#carousel-152894">
-                    </li>
-                    <li data-slide-to="1" data-target="#carousel-152894">
+                    @for (var index = 0; index < 3 && index <= Model.List.Count; index++)
+                    {
+                        <li data-slide-to="@index" data-target="#carousel-152894">
+                        </li>
+                       
+                    }
+                    @*<li data-slide-to="1" data-target="#carousel-152894">
                     </li>
                     <li data-slide-to="2" data-target="#carousel-152894" class="active">
-                    </li>
+                    </li>*@
                 </ol>
                 <div class="carousel-inner">
-                    <div class="item">
-                        <img alt="" src="img/1.jpg" />
-                        <div class="carousel-caption">
-                            <h4>
-                                棒球
-                            </h4>
-                            <p>
-                                棒球运动是一种以棒打球为主要特点，集体性、对抗性很强的球类运动项目，在美国、日本尤为盛行。
-                            </p>
+                    @for (var index = 0; index < 3 && index < Model.List.Count; index++)
+                    {
+                        <div class="item">
+                            <a href="@Model.List[index].Adress"></a><img  alt="" src="@Model.List[index].icon" />
+                            <div class="carousel-caption">
+                                <h4>
+                                    @Model.List[index].BookName
+                                </h4>
+                                <p>
+                                    @Model.List[index].BookName
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img alt="" src="img/2.jpg" />
-                        <div class="carousel-caption">
-                            <h4>
-                                冲浪
-                            </h4>
-                            <p>
-                                冲浪是以海浪为动力，利用自身的高超技巧和平衡能力，搏击海浪的一项运动。运动员站立在冲浪板上，或利用腹板、跪板、充气的橡皮垫、划艇、皮艇等驾驭海浪的一项水上运动。
-                            </p>
-                        </div>
-                    </div>
+
+                    }
+                    
+                    @*<div class="item">
+        <img alt="" src="img/2.jpg" />
+        <div class="carousel-caption">
+            <h4>
+                冲浪
+            </h4>
+            <p>
+                冲浪是以海浪为动力，利用自身的高超技巧和平衡能力，搏击海浪的一项运动。运动员站立在冲浪板上，或利用腹板、跪板、充气的橡皮垫、划艇、皮艇等驾驭海浪的一项水上运动。
+            </p>
+        </div>
+    </div>*@
                     <div class="item active">
                         <img alt="" src="img/3.jpg" />
                         <div class="carousel-caption">
@@ -54,7 +63,20 @@
             </div>
 
             <ul class="thumbnails">
-                <li class="span4">
+                    @for (var index = 0; index < 3 && index < Model.List.Count; index++)
+                    {
+                        <li class="span4">
+                            <div class="thumbnail" style=" ">
+                                <img alt="150x100" style="width:150px; height:212px;" src="@Model.List[index].icon">
+                                <div class="caption" contenteditable="false">
+                                    <h3>@Model.List[index].BookName</h3>
+                                    <p>@Model.List[index].Detail</p>
+                                    <p><a class="btn btn-primary" href="@Model.List[index].Adress">试读</a> <a class="btn" href="#">分享</a></p>
+                                </div>
+                            </div>
+                        </li>
+                    }
+                @*<li class="span4">
                     <div class="thumbnail">
                         <img alt="300x200" src="img/people.jpg">
                         <div class="caption" contenteditable="true">
@@ -83,7 +105,7 @@
                             <p><a class="btn btn-primary" href="#">浏览</a> <a class="btn" href="#">分享</a></p>
                         </div>
                     </div>
-                </li>
+                </li>*@
             </ul>
 
         </div>

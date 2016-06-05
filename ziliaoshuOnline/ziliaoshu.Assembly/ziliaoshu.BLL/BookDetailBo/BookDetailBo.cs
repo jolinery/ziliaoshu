@@ -17,11 +17,11 @@ namespace ziliaoshu.BLL
         {
             return dao.GetAll();
         }
-        public BookDetailDVO GetBookSearchIndex(string searchKey = null)
+        public BookDetailDVO GetAllByIcon()
         {
-            BookDetailDVO list = GetBookSearchAll(searchKey);
-            if (list != null && list.List != null && list.List.Any())
-                return list;
+            BookDetailDVO List = new BookDetailDVO();
+            List.List =dao.GetAllByIcon();
+            return List;
         }
         public BookDetailDVO GetBookSearchAll(string searchKey =null)
         {
@@ -29,6 +29,7 @@ namespace ziliaoshu.BLL
             List.List = GetAll();
             return List;
         }
+
         public bool AddBookBo(BookDetail bookDetail)
         {
             bookDetail.DataChange_CreateTime = DateTime.Now;

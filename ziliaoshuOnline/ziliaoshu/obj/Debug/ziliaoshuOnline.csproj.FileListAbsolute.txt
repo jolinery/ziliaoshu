@@ -213,3 +213,4 @@ F:\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu\bin\zh-Hans\System.
 F:\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu\obj\Debug\ziliaoshuOnline.csprojResolveAssemblyReference.cache
 F:\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu\obj\Debug\AilvwOnline.dll
 F:\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu\obj\Debug\AilvwOnline.pdb
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu\bin\O2S.Components.PDFRender4NET.dll

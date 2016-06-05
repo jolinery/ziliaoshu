@@ -30,8 +30,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="O2S.Components.PDFRender4NET, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Common\O2S\O2S.Components.PDFRender4NET.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,6 +46,8 @@
   <ItemGroup>
     <Compile Include="BookDetailBo\BookDetailBo.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="ConvertPDF2Image\O2SComponents.cs" />
+    <Compile Include="ConvertPDF2Image\PDFFile.cs" />
     <Compile Include="FeedBack\FeedBackBo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -62,7 +62,43 @@ namespace ziliaoshu.Dao
             }
             return bookDetailList;
         }
-
+        /// <summary>
+        /// 获取所有的书单
+        /// </summary>
+        /// <returns></returns>
+        public List<BookDetail> GetAllByIcon()
+        {
+            string sbSql = "select * from bookdetail where icon is not null";
+            List<BookDetail> bookDetailList = new List<BookDetail>();
+            using (MySqlConnection con = new MySqlConnection(ConfigString.configString))
+            {
+                // MySqlParameter[] para = {new MySqlParameter()};
+                con.Open();
+                MySqlCommand command = new MySqlCommand(sbSql, con);
+                var reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    BookDetail entity = new BookDetail();
+                    entity.BookName = reader["BookName"].ToString();
+                    entity.FileSize = reader["FileSize"].ToInt32();
+                    entity.Author = reader["Author"].ToString();
+                    entity.SecAuthor = reader["SecAuthor"].ToString();
+                    entity.Press = reader["Press"].ToString();
+                    entity.DataChange_CreateTime = reader["DataChange_CreateTime"].ToString().ToDateTime();
+                    entity.DataChange_CreateUser = reader["DataChange_CreateUser"].ToString();
+                    entity.DataChange_LastTime = reader["DataChange_LastTime"].ToString().ToDateTime();
+                    entity.DataChange_LastUser = reader["DataChange_LastUser"].ToString();
+                    entity.Type = byte.Parse(reader["Type"].ToString());
+                    entity.Status = byte.Parse(reader["Status"].ToString());
+                    entity.IsActive = byte.Parse(reader["IsActive"].ToString());
+                    entity.icon = reader["icon"].ToString();
+                    entity.Adress = reader["Adress"].ToString();
+                    entity.Detail = reader["Detail"].ToString();
+                    bookDetailList.Add(entity);
+                }
+            }
+            return bookDetailList;
+        }
         public int Insert(BookDetail bookDetail)
         {
             string sqlstr = @" INSERT INTO BookDetail(BookName,FileSize, Author, SecAuthor, Press, Type, Status, IsActive, icon, Adress,Detail, DataChange_CreateUser,DataChange_CreateTime, DataChange_LastUser, DataChange_LastTime)

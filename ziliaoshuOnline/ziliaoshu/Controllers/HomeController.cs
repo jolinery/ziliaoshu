@@ -8,7 +8,6 @@ using System.Web;
 using System.Web.Mvc;
 using ziliaoshu.BLL;
 using ziliaoshu.Common;
-using ziliaoshu.Common.ConvertPDF2Image;
 using ZiLiaoShu.Entity;
 
 namespace ZiLiaoShu.Controllers
@@ -19,7 +18,7 @@ namespace ZiLiaoShu.Controllers
         public ActionResult Index()
         {
            // ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
-            var model = new BookDetailBo().GetBookSearchAll();
+            var model = new BookDetailBo().GetAllByIcon();
             return View(model);
         }
                 //显示页面
@@ -75,27 +74,38 @@ namespace ZiLiaoShu.Controllers
 
                     string yearmonth = DateTime.Now.ToString("yymm");
 
-                    string fileName = PathHelper.RadomPath(Path.GetExtension(file.FileName));
-                    string fileP = PathHelper.StoreShuPath(fileName);
-                    string filePath = HttpContext.Server.MapPath(fileP);
-                    while (Directory.Exists(filePath))
+
+                    if (!Directory.Exists(HttpContext.Server.MapPath("/shu/") + yearmonth))
                     {
-                        filePath = HttpContext.Server.MapPath(PathHelper.StoreShuPath(fileName));
+                        Directory.CreateDirectory(HttpContext.Server.MapPath("/shu/") + yearmonth);
                     }
-                    file.SaveAs(filePath);
+                    var fileInfo = new PDFFileEntityDOT() {ImgNameFullPath = new List<string>(),ImgNamePath=new List<string>() };
+                    fileInfo.BookName = Path.GetFileNameWithoutExtension(file.FileName);
+                    do
+                    {
+                        fileInfo.FileName = PathHelper.RadomPath();
+                        fileInfo.FilePath = PathHelper.StoreShuPath(fileInfo.FileName, yearmonth);
+                        fileInfo.FileNamePath = fileInfo.FilePath + Path.GetExtension(file.FileName);
+                        fileInfo.FileFullPath = HttpContext.Server.MapPath(fileInfo.FileFullPath);
+                    }
+                    while (Directory.Exists(fileInfo.FileFullPath));
+
+                    file.SaveAs(fileInfo.FileFullPath);
                     
                     if (!Directory.Exists(HttpContext.Server.MapPath("/img/") ))
                     {
                         Directory.CreateDirectory(HttpContext.Server.MapPath("/img/") );
                     }
-                    string imgNamePath = HttpContext.Server.MapPath("/img/{0}".FormatWith(fileName));
+
+                     fileInfo.ImgPath = "/img/{0}".FormatWith(fileInfo.FileName);
+                     fileInfo.ImgFullPath=HttpContext.Server.MapPath(fileInfo.ImgPath);
                     //转换并存入图片
-                    O2SComponents.ConvertPDF2Image( filePath, imgNamePath, ImageFormat.Jpeg);
-                    bookDetail.BookName = Path.GetFileNameWithoutExtension(file.FileName);
+                    O2SComponents.ConvertPDF2Image(fileInfo.FileFullPath,ref fileInfo, ImageFormat.Jpeg);
+                    bookDetail.BookName = fileInfo.BookName;
                     bookDetail.FileSize = oFile.ContentLength;
-                    bookDetail.Adress = filePath;
+                    bookDetail.Adress = fileInfo.FileNamePath;
                     bookDetail.IsActive = 1;
-                    bookDetail.icon = imgNamePath + ImageFormat.Jpeg;
+                    bookDetail.icon = fileInfo.ImgNamePath.FirstOrDefault();
                     new BookDetailBo().AddBookBo(bookDetail);
                 }
 

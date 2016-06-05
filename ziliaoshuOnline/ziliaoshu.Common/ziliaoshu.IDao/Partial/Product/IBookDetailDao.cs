@@ -16,6 +16,10 @@ namespace ziliaoshu.IDao
          ///</summary>
          ///<returns></returns>
          List<BookDetail> GetAll();
-
+                /// <summary>
+        /// 获取所有的书单
+        /// </summary>
+        /// <returns></returns>
+         List<BookDetail> GetAllByIcon();
     }
 }

@@ -23,3 +23,12 @@ K:\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Co
 K:\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\obj\Debug\ziliaoshu.Common.csprojResolveAssemblyReference.cache
 K:\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\obj\Debug\ziliaoshu.Common.dll
 K:\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\obj\Debug\ziliaoshu.Common.pdb
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Debug\ziliaoshu.Common.dll
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Debug\ziliaoshu.Common.pdb
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Debug\EntityFramework.dll
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Debug\O2S.Components.PDFRender4NET.dll
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Debug\EntityFramework.xml
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\obj\Debug\ziliaoshu.Common.csprojResolveAssemblyReference.cache
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\obj\Debug\ziliaoshu.Common.dll
+D:\Vs\Learning\ziliaoshuOnline\ziliaoshuOnline\ziliaoshuOnline\ziliaoshu.Common\ziliaoshu.Common\obj\Debug\ziliaoshu.Common.pdb

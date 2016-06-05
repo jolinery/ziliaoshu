@@ -13,19 +13,18 @@ namespace ziliaoshu.Common
         /// </summary>
         /// <param name="fileName"></param>
         /// <returns></returns>
-        public static string RadomPath(string fileName)
+        public static string RadomPath()
         {
-            return "zls_" + DateTime.Now.ToString("yyyymmddhhmmss") + Extension.RndNumStr(10000,99999) + fileName;
+            return "zls_" + DateTime.Now.ToString("yyyymmddhhmmss") + Extension.RndNumStr(10000,99999);
         }
         /// <summary>
         /// 获取书的相对存储路径
         /// </summary>
         /// <param name="fileName"></param>
         /// <returns></returns>
-        public static string StoreShuPath(string fileName)
+        public static string StoreShuPath(string fileName,string secondFilePath)
         {
-            string yearmonth = DateTime.Now.ToString("yymm");
-            return "/shu/{0}/{1}".FormatWith(yearmonth, fileName);
+            return "/shu/{0}/{1}".FormatWith(secondFilePath, fileName);
         }
 
     }

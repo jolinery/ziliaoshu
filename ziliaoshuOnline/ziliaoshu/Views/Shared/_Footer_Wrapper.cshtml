@@ -34,12 +34,12 @@
 </div>
 
 <script type="text/javascript">
-    $ = jQuery;
-    jQuery(document).ready((function () {
+    //$ = jQuery;
+    $(function () {
         // dom加载完毕
         $('#devFeedBack').on('show.bs.modal', centerModals);
         $(window).on('resize', centerModals);
-    }));
+    });
     $("#devFeedBack").draggable({
         handle: ".modal-header",
         cursor: 'move',

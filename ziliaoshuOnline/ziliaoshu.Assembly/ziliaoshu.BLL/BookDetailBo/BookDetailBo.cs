@@ -32,6 +32,7 @@ namespace ziliaoshu.BLL
 
         public bool AddBookBo(BookDetail bookDetail)
         {
+            bookDetail.Detail = "";
             bookDetail.DataChange_CreateTime = DateTime.Now;
             bookDetail.DataChange_CreateUser = "joy";
             bookDetail.DataChange_LastTime = DateTime.Now;

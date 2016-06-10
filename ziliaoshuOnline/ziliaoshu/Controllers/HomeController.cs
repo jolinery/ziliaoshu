@@ -86,7 +86,7 @@ namespace ZiLiaoShu.Controllers
                         fileInfo.FileName = PathHelper.RadomPath();
                         fileInfo.FilePath = PathHelper.StoreShuPath(fileInfo.FileName, yearmonth);
                         fileInfo.FileNamePath = fileInfo.FilePath + Path.GetExtension(file.FileName);
-                        fileInfo.FileFullPath = HttpContext.Server.MapPath(fileInfo.FileFullPath);
+                        fileInfo.FileFullPath = HttpContext.Server.MapPath(fileInfo.FileNamePath);
                     }
                     while (Directory.Exists(fileInfo.FileFullPath));
 
